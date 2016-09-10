@@ -1,4 +1,4 @@
-package com.example;
+package com.mnt;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package com.example.vodafone.entities.auth;
+package com.mnt.entities.auth;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -34,9 +34,6 @@ public class AuthUser implements UserDetails {
 	private String name;
 	private String email;
 	
-
-	
-
 	private List<Role> roles = new ArrayList<Role>();
 	
 	@Transient

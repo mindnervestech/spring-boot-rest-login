@@ -1,4 +1,4 @@
-package com.example.auth;
+package com.mnt.auth;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,9 +10,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.example.vodafone.entities.auth.AuthUser;
-import com.example.vodafone.entities.auth.PermissionMatrix;
-import com.example.vodafone.entities.auth.Role;
+import com.mnt.entities.auth.AuthUser;
+import com.mnt.entities.auth.PermissionMatrix;
+import com.mnt.entities.auth.Role;
 
 @Service
 public class UserService implements org.springframework.security.core.userdetails.UserDetailsService {

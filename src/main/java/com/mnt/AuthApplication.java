@@ -1,4 +1,4 @@
-package com.example;
+package com.mnt;
 
 import javax.persistence.EntityManagerFactory;
 
@@ -13,17 +13,17 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
-@EnableAutoConfiguration
-@EnableScheduling
-//@SpringBootApplication
-@ComponentScan
-public class VodafoneApplication  {
+//@EnableAutoConfiguration
+//@EnableScheduling
+@SpringBootApplication
+//@ComponentScan
+public class AuthApplication  {
 
 	@Autowired
 	private EntityManagerFactory entityManagerFactory;
 	
 	public static void main(String[] args) {
-		SpringApplication.run(VodafoneApplication.class, args);
+		SpringApplication.run(AuthApplication.class, args);
 		System.out.println("here");
 	}
 	

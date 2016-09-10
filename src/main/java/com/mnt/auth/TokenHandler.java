@@ -1,4 +1,4 @@
-package com.example.auth;
+package com.mnt.auth;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -11,7 +11,7 @@ import java.util.UUID;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.example.vodafone.entities.auth.AuthUser;
+import com.mnt.entities.auth.AuthUser;
 
 public final class TokenHandler {
 
@@ -38,8 +38,8 @@ public final class TokenHandler {
     	map.put("subject",user.getName());
         return Jwts.builder()
                 .setSubject(user.getName())
-                //.claim("permissions",((AuthUser)user.getDetails()).getPermissions())
-                //.claim("roles", user.getAuthorities().toString())
+                .claim("permissions",((AuthUser)user.getDetails()).getPermissions())
+                .claim("roles", user.getAuthorities().toString())
                 
                 .setClaims(map)
                 .signWith(SignatureAlgorithm.HS512, SECRET_KEY)

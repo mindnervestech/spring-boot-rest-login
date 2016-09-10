@@ -1,4 +1,4 @@
-package com.example.auth;
+package com.mnt.auth;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.vodafone.entities.auth.AuthUser;
+import com.mnt.entities.auth.AuthUser;
 
 @RestController
 @RequestMapping("/user")

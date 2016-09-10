@@ -1,4 +1,4 @@
-package com.example.vodafone.entities.auth;
+package com.mnt.entities.auth;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

@@ -1,4 +1,4 @@
-package com.example.auth;
+package com.mnt.auth;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -30,8 +30,6 @@ public class TokenAuthenticationService {
         if (token != null) {
         	String permission = TokenHandler.getPermissions(token);
         	String requestedObject = request.getMethod() + ":" + request.getRequestURI();
-        	System.out.println("permission-->"+permission);
-        	System.out.println("requestedObject-->"+requestedObject);
         	
         	if(permission.contains(requestedObject + ":" + 0)) {
         		return null;
