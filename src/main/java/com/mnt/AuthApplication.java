@@ -19,17 +19,10 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 //@ComponentScan
 public class AuthApplication  {
 
-	@Autowired
-	private EntityManagerFactory entityManagerFactory;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(AuthApplication.class, args);
 		System.out.println("here");
 	}
 	
-	
-	@Bean(name="sessionFactory")
-    public SessionFactory sessionFactory() {
-        return ((HibernateEntityManagerFactory) this.entityManagerFactory).getSessionFactory();
-    }
 }
